@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Viva Canasvieiras | Link na Bio</title>
+
+    <link rel="icon" href="https://palacepraia.com.br/wp-content/uploads/2020/11/IMG_3032-scaled-1.jpg" type="image/jpeg">
+    <link rel="shortcut icon" href="https://palacepraia.com.br/wp-content/uploads/2020/11/IMG_3032-scaled-1.jpg" type="image/jpeg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1149413060427268');
+    fbq('track', 'PageView');
+    </script>
+    <noscript>
+        <img height="1" width="1" style="display:none"
+        src="https://www.facebook.com/tr?id=1149413060427268&ev=PageView&noscript=1"/>
+    </noscript>
+    <!-- End Meta Pixel Code -->
+
+    <style>
+        :root {
+            --primary-blue: #2c75b9;
+            --bg-color: #ffffff;
+            --box-bg: #f4f6f8;
+            --airbnb-red: #ea4c53;
+            --whatsapp-green: #25D366;
+            --ring-yellow: #fcc419;
+            --badge-red: #c92a2a;
+            --text-color: #333;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 15px;
+            user-select: none;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+        }
+
+        .profile-container {
+            position: relative;
+            width: 115px;
+            height: 115px;
+            margin: 0 auto 5px;
+        }
+
+        .profile-ring {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            border: 3px solid var(--ring-yellow);
+            padding: 3px;
+            background: white;
+            overflow: hidden;
+        }
+
+        .profile-img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .badge {
+            position: absolute;
+            bottom: 0;
+            right: -10px;
+            background-color: var(--badge-red);
+            color: white;
+            font-weight: 800;
+            font-size: 0.75rem;
+            padding: 4px 12px;
+            border-radius: 20px;
+            transform: rotate(-5deg);
+            animation: pulse 2s infinite;
+        }
+
+        h1 {
+            color: var(--primary-blue);
+            font-size: 1.35rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        .info-card {
+            background-color: var(--box-bg);
+            border-radius: 15px;
+            padding: 15px 12px;
+            text-align: left;
+            margin-bottom: 20px;
+        }
+
+        .info-list { list-style: none; }
+
+        .info-list li {
+            display: flex;
+            margin-bottom: 8px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+
+        .emoji-icon {
+            min-width: 22px;
+            margin-right: 8px;
+        }
+
+        .features-row {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin-bottom: 20px;
+        }
+
+        .feature-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 55px;
+        }
+
+        .icon-circle {
+            width: 38px;
+            height: 38px;
+            background-color: #f0f7ff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary-blue);
+            margin-bottom: 4px;
+        }
+
+        .feature-box span {
+            font-size: 0.6rem;
+            font-weight: 600;
+            color: #666;
+        }
+
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 15px;
+            border-radius: 12px;
+            font-weight: 700;
+            font-size: 1rem;
+            text-decoration: none;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        .btn-airbnb {
+            background-color: var(--airbnb-red);
+            color: white;
+        }
+
+        .btn-whatsapp {
+            background-color: white;
+            color: var(--whatsapp-green);
+            border: 2px solid var(--whatsapp-green);
+        }
+
+        footer {
+            margin-top: 25px;
+            font-size: 0.7rem;
+            color: #bbb;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1) rotate(-5deg); }
+            50% { transform: scale(1.1) rotate(-5deg); }
+            100% { transform: scale(1) rotate(-5deg); }
+        }
+    </style>
+</head>
+
+<body oncontextmenu="return false;">
+
+<div class="container">
+
+    <div class="profile-container">
+        <div class="profile-ring">
+            <img src="https://palacepraia.com.br/wp-content/uploads/2020/11/IMG_3032-scaled-1.jpg" class="profile-img">
+        </div>
+        <div class="badge">BAIXOU!</div>
+    </div>
+
+    <h1>@viva.canasvieiras</h1>
+
+    <div class="info-card">
+        <ul class="info-list">
+            <li><span class="emoji-icon">🏖️</span>Apto em Canasvieiras – Floripa</li>
+            <li><span class="emoji-icon">🌊</span>Apenas 50m do mar</li>
+            <li><span class="emoji-icon">🛍️</span>Perto do centrinho</li>
+            <li><span class="emoji-icon">🏡</span>Conforto e ótima localização</li>
+        </ul>
+    </div>
+
+    <div class="links">
+        <a href="https://www.airbnb.com.br/rooms/1584732358052818194"
+           class="btn btn-airbnb"
+           onclick="fbq('trackCustom', 'ClicouAirbnb');">
+            <i class="fa-brands fa-airbnb"></i>&nbsp;Reservar Agora
+        </a>
+
+        <a href="https://api.whatsapp.com/send/?phone=55048984150036"
+           class="btn btn-whatsapp"
+           onclick="fbq('trackCustom', 'ClicouWhatsApp');">
+            <i class="fa-brands fa-whatsapp"></i>&nbsp;Falar no WhatsApp
+        </a>
+    </div>
+
+    <footer>Florianópolis - Santa Catarina</footer>
+
+</div>
+
+</body>
+</html>
