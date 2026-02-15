@@ -6,14 +6,13 @@
     <title>Viva Canasvieiras | Link na Bio</title>
 
     <link rel="icon" href="https://palacepraia.com.br/wp-content/uploads/2020/11/IMG_3032-scaled-1.jpg" type="image/jpeg">
-    <link rel="shortcut icon" href="https://palacepraia.com.br/wp-content/uploads/2020/11/IMG_3032-scaled-1.jpg" type="image/jpeg">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-    <!-- Meta Pixel Code -->
+    <!-- Meta Pixel -->
     <script>
     !function(f,b,e,v,n,t,s)
     {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -26,11 +25,6 @@
     fbq('init', '1149413060427268');
     fbq('track', 'PageView');
     </script>
-    <noscript>
-        <img height="1" width="1" style="display:none"
-        src="https://www.facebook.com/tr?id=1149413060427268&ev=PageView&noscript=1"/>
-    </noscript>
-    <!-- End Meta Pixel Code -->
 
     <style>
         :root {
@@ -44,7 +38,7 @@
             --text-color: #333;
         }
 
-        * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
 
         body {
             font-family: 'Poppins', sans-serif;
@@ -55,7 +49,6 @@
             align-items: center;
             justify-content: center;
             padding: 15px;
-            user-select: none;
         }
 
         .container {
@@ -141,6 +134,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            gap: 8px;
             padding: 15px;
             border-radius: 12px;
             font-weight: 700;
@@ -159,6 +153,11 @@
             color: white;
         }
 
+        .vrbo-logo {
+            width: 22px;
+            height: auto;
+        }
+
         footer {
             margin-top: 25px;
             font-size: 0.7rem;
@@ -173,7 +172,7 @@
     </style>
 </head>
 
-<body oncontextmenu="return false;">
+<body>
 
 <div class="container">
 
@@ -200,14 +199,18 @@
            target="_blank"
            class="btn btn-airbnb"
            onclick="fbq('trackCustom', 'ClicouAirbnb');">
-            <i class="fa-brands fa-airbnb"></i>&nbsp;Reservar Agora
+            <i class="fa-brands fa-airbnb"></i>
+            Reservar Agora
         </a>
 
         <a href="https://www.vrbo.com/pt-br/imovel/p20243022"
            target="_blank"
            class="btn btn-vrbo"
            onclick="fbq('trackCustom', 'ClicouVrbo');">
-            <i class="fa-solid fa-house"></i>&nbsp;Reserve Vrbo
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/5b/Vrbo_logo.svg" 
+                 alt="Vrbo" 
+                 class="vrbo-logo">
+            Reserve Vrbo
         </a>
     </div>
 
