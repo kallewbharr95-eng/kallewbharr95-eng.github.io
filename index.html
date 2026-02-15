@@ -1,159 +1,217 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<title>Viva Canasvieiras | Link na Bio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Viva Canasvieiras | Link na Bio</title>
 
-<link rel="icon" href="https://palacepraia.com.br/wp-content/uploads/2020/11/IMG_3032-scaled-1.jpg">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="https://palacepraia.com.br/wp-content/uploads/2020/11/IMG_3032-scaled-1.jpg" type="image/jpeg">
+    <link rel="shortcut icon" href="https://palacepraia.com.br/wp-content/uploads/2020/11/IMG_3032-scaled-1.jpg" type="image/jpeg">
 
-<!-- Meta Pixel -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1149413060427268');
-fbq('track', 'PageView');
-</script>
-<noscript>
-<img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1149413060427268&ev=PageView&noscript=1"/>
-</noscript>
-<!-- End Meta Pixel -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-<style>
-:root{
---primary:#2c75b9;
---bg:#ffffff;
---box:#f4f6f8;
---airbnb:#ea4c53;
---vrbo:#0a3b5c;
---text:#333;
-}
+    <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1149413060427268');
+    fbq('track', 'PageView');
+    </script>
+    <noscript>
+        <img height="1" width="1" style="display:none"
+        src="https://www.facebook.com/tr?id=1149413060427268&ev=PageView&noscript=1"/>
+    </noscript>
+    <!-- End Meta Pixel Code -->
 
-*{margin:0;padding:0;box-sizing:border-box}
+    <style>
+        :root {
+            --primary-blue: #2c75b9;
+            --bg-color: #ffffff;
+            --box-bg: #f4f6f8;
+            --airbnb-red: #ea4c53;
+            --vrbo-blue: #0b5cff;
+            --ring-yellow: #fcc419;
+            --badge-red: #c92a2a;
+            --text-color: #333;
+        }
 
-body{
-font-family:'Poppins',sans-serif;
-background:var(--bg);
-color:var(--text);
-display:flex;
-align-items:center;
-justify-content:center;
-min-height:100vh;
-padding:15px;
-}
+        * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
 
-.container{
-width:100%;
-max-width:400px;
-text-align:center;
-}
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 15px;
+            user-select: none;
+        }
 
-.profile{
-width:110px;
-height:110px;
-margin:0 auto 10px;
-border-radius:50%;
-overflow:hidden;
-border:3px solid #fcc419;
-}
+        .container {
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+        }
 
-.profile img{
-width:100%;
-height:100%;
-object-fit:cover;
-}
+        .profile-container {
+            position: relative;
+            width: 115px;
+            height: 115px;
+            margin: 0 auto 5px;
+        }
 
-h1{
-color:var(--primary);
-margin-bottom:15px;
-font-size:1.3rem;
-}
+        .profile-ring {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            border: 3px solid var(--ring-yellow);
+            padding: 3px;
+            background: white;
+            overflow: hidden;
+        }
 
-.info{
-background:var(--box);
-padding:15px;
-border-radius:15px;
-margin-bottom:20px;
-font-size:0.9rem;
-text-align:left;
-}
+        .profile-img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+        }
 
-.info div{margin-bottom:6px}
+        .badge {
+            position: absolute;
+            bottom: 0;
+            right: -10px;
+            background-color: var(--badge-red);
+            color: white;
+            font-weight: 800;
+            font-size: 0.75rem;
+            padding: 4px 12px;
+            border-radius: 20px;
+            transform: rotate(-5deg);
+            animation: pulse 2s infinite;
+        }
 
-.links{
-display:flex;
-flex-direction:column;
-gap:12px;
-}
+        h1 {
+            color: var(--primary-blue);
+            font-size: 1.35rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
 
-.btn{
-padding:14px;
-border-radius:12px;
-font-weight:700;
-text-decoration:none;
-display:flex;
-align-items:center;
-justify-content:center;
-color:white;
-font-size:1rem;
-}
+        .info-card {
+            background-color: var(--box-bg);
+            border-radius: 15px;
+            padding: 15px 12px;
+            text-align: left;
+            margin-bottom: 20px;
+        }
 
-.airbnb{background:var(--airbnb)}
-.vrbo{background:var(--vrbo)}
+        .info-list { list-style: none; }
 
-footer{
-margin-top:20px;
-font-size:0.7rem;
-color:#aaa;
-}
-</style>
+        .info-list li {
+            display: flex;
+            margin-bottom: 8px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+
+        .emoji-icon {
+            min-width: 22px;
+            margin-right: 8px;
+        }
+
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 15px;
+            border-radius: 12px;
+            font-weight: 700;
+            font-size: 1rem;
+            text-decoration: none;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        .btn-airbnb {
+            background-color: var(--airbnb-red);
+            color: white;
+        }
+
+        .btn-vrbo {
+            background-color: var(--vrbo-blue);
+            color: white;
+        }
+
+        footer {
+            margin-top: 25px;
+            font-size: 0.7rem;
+            color: #bbb;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1) rotate(-5deg); }
+            50% { transform: scale(1.1) rotate(-5deg); }
+            100% { transform: scale(1) rotate(-5deg); }
+        }
+    </style>
 </head>
 
-<body>
+<body oncontextmenu="return false;">
 
 <div class="container">
 
-<div class="profile">
-<img src="https://palacepraia.com.br/wp-content/uploads/2020/11/IMG_3032-scaled-1.jpg">
-</div>
+    <div class="profile-container">
+        <div class="profile-ring">
+            <img src="https://palacepraia.com.br/wp-content/uploads/2020/11/IMG_3032-scaled-1.jpg" class="profile-img">
+        </div>
+        <div class="badge">BAIXOU!</div>
+    </div>
 
-<h1>@viva.canasvieiras</h1>
+    <h1>@viva.canasvieiras</h1>
 
-<div class="info">
-<div>🏖️ Apto em Canasvieiras – Floripa</div>
-<div>🌊 Apenas 50m do mar</div>
-<div>🛍️ Perto do centrinho</div>
-<div>🏡 Conforto e ótima localização</div>
-</div>
+    <div class="info-card">
+        <ul class="info-list">
+            <li><span class="emoji-icon">🏖️</span>Apto em Canasvieiras – Floripa</li>
+            <li><span class="emoji-icon">🌊</span>Apenas 50m do mar</li>
+            <li><span class="emoji-icon">🛍️</span>Perto do centrinho</li>
+            <li><span class="emoji-icon">🏡</span>Conforto e ótima localização</li>
+        </ul>
+    </div>
 
-<div class="links">
+    <div class="links">
+        <a href="https://www.airbnb.com.br/rooms/1584732358052818194"
+           target="_blank"
+           class="btn btn-airbnb"
+           onclick="fbq('trackCustom', 'ClicouAirbnb');">
+            <i class="fa-brands fa-airbnb"></i>&nbsp;Reservar Agora
+        </a>
 
-<a href="https://www.airbnb.com.br/rooms/1584732358052818194"
-class="btn airbnb"
-onclick="fbq('trackCustom','ClicouAirbnb');">
-<i class="fa-brands fa-airbnb"></i>&nbsp; Reservar Airbnb
-</a>
+        <a href="https://www.vrbo.com/pt-br/imovel/p20243022"
+           target="_blank"
+           class="btn btn-vrbo"
+           onclick="fbq('trackCustom', 'ClicouVrbo');">
+            <i class="fa-solid fa-house"></i>&nbsp;Reserve Vrbo
+        </a>
+    </div>
 
-<a href="https://www.vrbo.com/pt-br/imovel/p20243022"
-class="btn vrbo"
-onclick="fbq('track','ViewContent');">
-<i class="fa-solid fa-house"></i>&nbsp; Reserve Vrbo
-</a>
-
-</div>
-
-<footer>Florianópolis - Santa Catarina</footer>
+    <footer>Florianópolis - Santa Catarina</footer>
 
 </div>
 
