@@ -141,6 +141,11 @@
             font-size: 1rem;
             text-decoration: none;
             box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            transition: transform 0.15s ease;
+        }
+
+        .btn:active {
+            transform: scale(0.97);
         }
 
         .btn-airbnb {
@@ -151,11 +156,6 @@
         .btn-vrbo {
             background-color: var(--vrbo-blue);
             color: white;
-        }
-
-        .vrbo-logo {
-            width: 22px;
-            height: auto;
         }
 
         footer {
@@ -195,7 +195,7 @@
     </div>
 
     <div class="links">
-        <a href="https://www.airbnb.com.br/rooms/1584732358052818194"
+        <a href="https://airbnb.com/h/vivacanas"
            target="_blank"
            class="btn btn-airbnb"
            onclick="fbq('trackCustom', 'ClicouAirbnb');">
@@ -207,9 +207,6 @@
            target="_blank"
            class="btn btn-vrbo"
            onclick="fbq('trackCustom', 'ClicouVrbo');">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/5/5b/Vrbo_logo.svg" 
-                 alt="Vrbo" 
-                 class="vrbo-logo">
             Reserve Vrbo
         </a>
     </div>
